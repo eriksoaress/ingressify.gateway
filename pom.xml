@@ -8,7 +8,7 @@
 		<version>3.2.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>insper.ingressify</groupId>
+	<groupId>jogayjoga</groupId>
 	<artifactId>gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gateway</name>
@@ -18,7 +18,7 @@
 	</properties>
 	<dependencies>		
 		<dependency>
-			<groupId>insper.ingressify</groupId>
+			<groupId>jogayjoga</groupId>
 			<artifactId>auth</artifactId>
 			<version>${project.version}</version>
 		</dependency>

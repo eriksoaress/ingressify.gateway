@@ -1,4 +1,4 @@
-package insper.ingressify.gateway.security;
+package jogayjoga.gateway.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -12,8 +12,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.server.ServerWebExchange;
 
-import insper.ingressify.auth.SolveIn;
-import insper.ingressify.auth.SolveOut;
+import jogayjoga.auth.SolveIn;
+import jogayjoga.auth.SolveOut;
 import reactor.core.publisher.Mono;
 
 @Component

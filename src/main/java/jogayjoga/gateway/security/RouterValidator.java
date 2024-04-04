@@ -1,4 +1,4 @@
-package insper.ingressify.gateway.security;
+package jogayjoga.gateway.security;
 
 
 import java.util.List;

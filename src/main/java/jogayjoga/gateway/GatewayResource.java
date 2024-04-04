@@ -1,4 +1,4 @@
-package insper.ingressify.gateway;
+package jogayjoga.gateway;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

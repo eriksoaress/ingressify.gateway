@@ -1,4 +1,4 @@
-package insper.ingressify.gateway;
+package jogayjoga.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

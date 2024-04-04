@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ingressify-gateway
+    name: jogayjoga-gateway
 
   cloud:
     discovery:
@@ -8,13 +8,13 @@ spring:
         enabled: true
     gateway:
       routes:
-        - id: ingressify-auth
-          uri: lb://ingressify-auth
+        - id: jogayjoga-auth
+          uri: lb://jogayjoga-auth
           predicates:
             - Path=/auth/**
 
-        - id: ingressify-account
-          uri: lb://ingressify-account
+        - id: jogayjoga-account
+          uri: lb://jogayjoga-account
           predicates:
             - Path=/accounts/**
 
