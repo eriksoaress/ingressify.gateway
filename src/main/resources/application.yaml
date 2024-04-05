@@ -18,6 +18,11 @@ spring:
           predicates:
             - Path=/accounts/**
 
+        - id: jogayjoga-court
+          uri: lb://jogayjoga-court
+          predicates:
+            - Path=/court/**
+
         - id: insper
           uri: https://www.insper.edu.br
           predicates:
