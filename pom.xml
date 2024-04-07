@@ -22,6 +22,12 @@
 			<artifactId>auth</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>jogayjoga</groupId>
+			<artifactId>court</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	  
 		<dependency>
 			<groupId>org.projectlombok</groupId>
