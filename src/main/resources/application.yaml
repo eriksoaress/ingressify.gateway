@@ -27,6 +27,11 @@ spring:
           uri: lb://jogayjoga-group
           predicates:
             - Path=/group/**
+        
+        - id: jogayjoga-sport
+          uri: lb://jogayjoga-sport
+          predicates:
+            - Path=/sport/**
 
         - id: insper
           uri: https://www.insper.edu.br
