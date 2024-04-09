@@ -58,4 +58,7 @@ api:
       POST /auth/register,
       POST /auth/login,
       ANY /auth/actuator,
-      ANY /accounts/actuator
+      ANY /accounts/actuator,
+      ANY /court/**,
+      ANY /group/**,
+      ANY /sport/**
