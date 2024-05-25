@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gateway
+  labels:
+    app: gateway
 spec:
   selector:
     matchLabels:
@@ -14,37 +16,8 @@ spec:
     spec:
       containers:
         - name: gateway
-          image: jogayjoga/gateway:latest
+          image: eriksoaress/gateway:latest
           ports:
             - containerPort: 8080
           env:
-
-            - name: DISCOVERY_HOST
-              valueFrom:
-                configMapKeyRef:
-                  name: discovery-configmap
-                  key: DISCOVERY_HOST
-
-            - name: POSTGRES_HOST
-              valueFrom:
-                configMapKeyRef:
-                  name: postgres-configmap
-                  key: POSTGRES_HOST
-
-            - name: POSTGRES_DB
-              valueFrom:
-                configMapKeyRef:
-                  name: postgres-configmap
-                  key: POSTGRES_DB
-
-            - name: POSTGRES_USER
-              valueFrom:
-                secretKeyRef:
-                  name: postgres-credentials
-                  key: POSTGRES_USERNAME
-
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: postgres-credentials
-                  key: POSTGRES_PASSWORD
+          
